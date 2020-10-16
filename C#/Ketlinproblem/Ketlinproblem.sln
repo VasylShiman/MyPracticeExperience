@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ketlinproblem", "Ketlinproblem\Ketlinproblem.csproj", "{D9B6353B-95F5-41C0-B514-04E0023D547D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ferma", "Ferma\Ferma.csproj", "{1F2CCC33-DD09-4B5B-9BC1-7E3C6F219030}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9B6353B-95F5-41C0-B514-04E0023D547D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9B6353B-95F5-41C0-B514-04E0023D547D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9B6353B-95F5-41C0-B514-04E0023D547D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9B6353B-95F5-41C0-B514-04E0023D547D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F2CCC33-DD09-4B5B-9BC1-7E3C6F219030}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F2CCC33-DD09-4B5B-9BC1-7E3C6F219030}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F2CCC33-DD09-4B5B-9BC1-7E3C6F219030}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F2CCC33-DD09-4B5B-9BC1-7E3C6F219030}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1160769A-6FB1-4CA4-A6D3-F716ECF4144A}
+	EndGlobalSection
+EndGlobal
