@@ -47,9 +47,10 @@ namespace BeeModification
 
                     thisCollector.GatherNectar();
                 }
+            }
 
-        private void assignJob_Click(object sender, EventArgs e)
-        {
+         void assignJob_Click(object sender, EventArgs e)
+         {
             if(queen.AssignWork(workerBeeJob.Text, (int)shifts.Value) == false)
             {
                 MessageBox.Show($"Для этой работы рабочих нету {workerBeeJob.Text}, Матка говорит");
@@ -58,13 +59,13 @@ namespace BeeModification
             {
                 MessageBox.Show($"Задание {workerBeeJob.Text} будет закончено через {shifts.Value} , Матка говорит");
             }
-        }
+         }
 
         
 
-        private void nextShift_Click(object sender, EventArgs e)
-        {
+         void nextShift_Click(object sender, EventArgs e)
+         {
             report.Text = queen.WorkTheNextShift();
-        }
+         }
     }
 }
