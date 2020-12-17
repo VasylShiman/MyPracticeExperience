@@ -7,6 +7,7 @@ using System.Windows.Forms;
 
 namespace BobAndJoe
 {
+    [Serializable]
     class Guy
     {
         public string Name;

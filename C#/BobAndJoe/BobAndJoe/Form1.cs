@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace BobAndJoe
 {
@@ -51,7 +53,32 @@ namespace BobAndJoe
 
         private void joeGiveBob_Click(object sender, EventArgs e)
         {
-            bob.Cash += joe.GiveCash(15);
+            bob.Cash += joe.GiveCash(10);
+            UpdateForm();
+        }
+
+        private void bobGiveJoe_Click(object sender, EventArgs e)
+        {
+            joe.ReceiveCash(bob.GiveCash(5));
+            UpdateForm();
+        }
+
+        private void saveJoe_Click(object sender, EventArgs e)
+        {
+            using (Stream output = File.Create("Guy_file.dat"))
+            {
+                BinaryFormatter formatter = new BinaryFormatter();
+                formatter.Serialize(output, joe);
+            }
+        }
+
+        private void loadJoe_Click(object sender, EventArgs e)
+        {
+            using (Stream input = File.OpenRead("Guy_file.dat"))
+            {
+                BinaryFormatter formatter = new BinaryFormatter();
+                joe = (Guy)formatter.Deserialize(input);
+            }
             UpdateForm();
         }
     }
